@@ -32,3 +32,14 @@ $subtitle: #243f4d;
   font-family: 'Rubik-Medium', sans-serif;
   font-weight: 500;
 }
+
+%btn{
+    border: none;
+    background-color: #a3bbc8;
+    color: #fff;
+    padding: 13px 15px;
+    cursor: pointer;  
+    @extend %rubik-500;
+    font-size: 15px;
+    line-height: 12px;
+}
