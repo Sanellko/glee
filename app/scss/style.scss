@@ -58,6 +58,17 @@
   &__link-img-cart {
     margin-left: 58px;
   }
+  &__link-img-cart::before{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 32px;
+    background-color: #fde7d3;
+    top: 0;
+    left: 0;
+  }
+
+  
   &__items {
     padding: 17px;
     border-radius: 50%;
@@ -173,10 +184,13 @@
 }
 
 .top-slider {
+
+  &__inner{
   background-image: url("../images/top-slider-bg.png");
   background-repeat: no-repeat;
-  block-size: cover;
+  background-size: cover;
   padding: 220px 0 40px;
+  }
 
   &__content {
     padding-left: 300px;
@@ -273,16 +287,19 @@
 }
 
 .product {
-  padding: 75px;
+  padding-top: 75px;
   text-align: center;
   &__list {
     @extend %dmsans-700;
     display: flex;
     justify-content: center;
     margin-bottom: 80px;
+    
   }
   &__list-link {
     color: #8b8b8b;
+    border: none;
+    background-color: #fff;
     &:hover {
       color: #191919;
     }
@@ -294,6 +311,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 40px 30px;
+    margin-bottom: 190px;
   }
 }
 
@@ -353,6 +371,197 @@
   }
   &__price {
     color: #a3bbc8;
+  }
+  
+}
+
+.product-light{
+  display: flex;
+  justify-content: space-between;
+  grid-gap: 30px;
+  
+  &__item{
+    width: 870px;
+    height: 390px;
+    background-color: #feefe2;
+    display: flex;
+    
+    padding-bottom: 88px;
+  }
+  &__img{
+    width: 233px;
+    height: 405px;
+    margin-top: -94px;
+    margin-left: 150px;
+    
+  }
+  &__info{
+    padding-left: 30px;
+    margin-top: auto;
+    text-align: left;
+    max-width: 357px;
+  }
+  &__info-title{
+    font-size: 26px;
+    @extend %dmsans-700;
+    color: $subtitle;
+    margin-bottom: 28px;
+  }
+  &__info-text{
+    @extend %rubik-400;
+    color: $subtitle;
+    margin-bottom: 33px;
+  }
+  &__info-btn{
+    border: 1px solid #b3b7b5;
+    border-radius: 5px;
+    padding: 17px 18px;
+    width: 180px;
+    color: #436372;
+    @extend %rubik-500;
+    font-size: 15px;
+
+  }
+  &__info-link{
+    color: $subtitle;
+  }
+  &__info-arrows{
+    margin-left: 40px;
+  }
+}
+
+
+.design {
+  padding-top: 100px;
+  
+  &__list {
+    @extend %dmsans-700;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+  }
+  &__list-link {
+    color: #8b8b8b;
+    border: none;
+    background-color: #fff;
+    &:hover {
+      color: #191919;
+    }
+  }
+  &__list-item + .design__list-item {
+    padding-left: 30px;
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 35px 30px;
+    }
+  &__item-link{
+    width: 370px;
+    height: 246px;
+    }
+  &__item-title{
+    padding: 40px 0 0 35px;
+    display: block;
+    width: 208px;
+    color: $title;
+    font-size: 20px;
+    line-height: 21px;
+    @extend %dmsans-700;
+    margin-bottom: 7px;
+  }
+  &__item-text{
+    color: #a3bbc8;
+    padding-left: 35px;
+    @extend %dmsans-700;
+  }
+}
+
+.video{
+  margin: 120px 0;
+  &__popup{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.blog{
+  &__title{
+    padding-bottom: 265px;
+  }
+  &__inner{
+  background-color: #f8f1ea;
+  }
+  &__top{
+    display: flex;
+    justify-content: space-between;;
+  }
+  &__link{
+    @extend %dmsans-700;
+    color: #262626;
+  }
+  &__items{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+  }
+  &__item{
+    margin-top: -279px;
+    max-width: 370px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  &__btn{
+    background-color: #a3bbc8;
+    padding: 5px 30px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    display: block;
+    border-radius: 20px;
+    margin-top: -15px;
+    margin-left: 27px;
+    width: 100px;
+    position: absolute;
+    @extend %popins-700;
+    }
+  &__item-titlelink{
+    display: block;
+    padding: 30px 50px 0 30px;
+    @extend %dmsans-500;
+    font-size: 18px;
+    color: #262626;
+    height: 130px;
+  }
+  &__item-info{
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 0;
+    border-top: 1px solid #e0e0e0;
+    margin: 0 28px;
+  }
+  &__item-date{
+    padding: 0 45px 0 17px;
+  }
+  &__item-author,
+  &__item-date{
+    font-size: 12px;
+    color: #222933;
+    @extend %rubik-400; 
+  }
+}
+
+.partners {
+  
+  &__list {
+    height: 270px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
 }
 
