@@ -42,6 +42,7 @@
   &__link {
     position: relative;
   }
+  
   &__item {
     padding: 19px;
     border-radius: 50%;
@@ -58,17 +59,16 @@
   &__link-img-cart {
     margin-left: 58px;
   }
-  &__link-img-cart::before{
+  &__border::after{
     content: "";
     position: absolute;
     width: 1px;
     height: 32px;
     background-color: #fde7d3;
-    top: 0;
-    left: 0;
+    top: -12px;
+    left: 45px;
   }
-
-  
+    
   &__items {
     padding: 17px;
     border-radius: 50%;
@@ -213,21 +213,23 @@
     margin-bottom: 40px;
   }
   &__button {
-    display: block;
-    height: 60px;
+    border: none;
+    background-color: #a3bbc8;
     width: 200px;
+    padding: 22px 0 20px 27px;
+    cursor: pointer;  
+    @extend %rubik-500;
+    font-size: 15px;
+    line-height: 12px;
     position: relative;
   }
   &__link {
-    @extend %btn;
-    height: 60px;
-    width: 200px;
-    padding: 24px 21px;
+  color: #fff;
   }
   &__arrows {
     position: absolute;
-    padding-top: 0px;
-    padding-left: 0px;
+    top: 23px;
+    left: 154px;
   }
   &__img {
     padding-top: 50px;
@@ -562,6 +564,70 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+  }
+}
+
+.top{
+  background-color: #edf1f4;
+  padding: 30px 0;
+  &__title{
+    margin-bottom: 8px;
+    color: #222933;
+    @extend %rubik-400;
+  }
+ }
+ 
+.modal{
+  padding-top: 115px;
+  max-width: 470px;
+  margin: 0 auto 122px;
+  &__label{
+    margin-bottom: 30px;
+    display: block;
+  }
+  &__input{
+    display: block;
+    width: 100%;
+    border: 2px solid #f6f6f6;
+    margin-top: 4px;
+    height: 60px;
+    padding: 0 15px;
+  }
+  &__btn{
+    display: block;
+    background-color: #a3bbc8;
+    color: #fff;
+    @extend %rubik-500;
+    padding: 18px 0;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+  }
+  &__problem{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    border-bottom: 2px solid #f6f6f6;
+    @extend %rubik-400;
+  }
+  &__error{
+    color: inherit;
+    display: inline-block;
+  }
+  &__text{
+    text-align: center;
+    padding: 30px 0 20px;
+    @extend %rubik-400;
+  }
+  &__greate{
+    display: block;
+    background-color: #fff;
+    color: $subtitle;
+    @extend %rubik-500;
+    padding: 14px 0;
+    border: 2px solid #a3bbc8;
+    width: 100%;
+    cursor: pointer;
   }
 }
 
