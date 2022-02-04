@@ -42,7 +42,7 @@
   &__link {
     position: relative;
   }
-  
+
   &__item {
     padding: 19px;
     border-radius: 50%;
@@ -59,7 +59,7 @@
   &__link-img-cart {
     margin-left: 58px;
   }
-  &__border::after{
+  &__border::after {
     content: "";
     position: absolute;
     width: 1px;
@@ -68,7 +68,7 @@
     top: -12px;
     left: 45px;
   }
-    
+
   &__items {
     padding: 17px;
     border-radius: 50%;
@@ -184,12 +184,11 @@
 }
 
 .top-slider {
-
-  &__inner{
-  background-image: url("../images/top-slider-bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 220px 0 40px;
+  &__inner {
+    background-image: url("../images/top-slider-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 220px 0 40px;
   }
 
   &__content {
@@ -217,14 +216,14 @@
     background-color: #a3bbc8;
     width: 200px;
     padding: 22px 0 20px 27px;
-    cursor: pointer;  
+    cursor: pointer;
     @extend %rubik-500;
     font-size: 15px;
     line-height: 12px;
     position: relative;
   }
   &__link {
-  color: #fff;
+    color: #fff;
   }
   &__arrows {
     position: absolute;
@@ -296,7 +295,6 @@
     display: flex;
     justify-content: center;
     margin-bottom: 80px;
-    
   }
   &__list-link {
     color: #8b8b8b;
@@ -374,47 +372,45 @@
   &__price {
     color: #a3bbc8;
   }
-  
 }
 
-.product-light{
+.product-light {
   display: flex;
   justify-content: space-between;
   grid-gap: 30px;
-  
-  &__item{
+
+  &__item {
     width: 870px;
     height: 390px;
     background-color: #feefe2;
     display: flex;
-    
+
     padding-bottom: 88px;
   }
-  &__img{
+  &__img {
     width: 233px;
     height: 405px;
     margin-top: -94px;
     margin-left: 150px;
-    
   }
-  &__info{
+  &__info {
     padding-left: 30px;
     margin-top: auto;
     text-align: left;
     max-width: 357px;
   }
-  &__info-title{
+  &__info-title {
     font-size: 26px;
     @extend %dmsans-700;
     color: $subtitle;
     margin-bottom: 28px;
   }
-  &__info-text{
+  &__info-text {
     @extend %rubik-400;
     color: $subtitle;
     margin-bottom: 33px;
   }
-  &__info-btn{
+  &__info-btn {
     border: 1px solid #b3b7b5;
     border-radius: 5px;
     padding: 17px 18px;
@@ -422,20 +418,18 @@
     color: #436372;
     @extend %rubik-500;
     font-size: 15px;
-
   }
-  &__info-link{
+  &__info-link {
     color: $subtitle;
   }
-  &__info-arrows{
+  &__info-arrows {
     margin-left: 40px;
   }
 }
 
-
 .design {
   padding-top: 100px;
-  
+
   &__list {
     @extend %dmsans-700;
     display: flex;
@@ -457,12 +451,12 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 35px 30px;
-    }
-  &__item-link{
+  }
+  &__item-link {
     width: 370px;
     height: 246px;
-    }
-  &__item-title{
+  }
+  &__item-title {
     padding: 40px 0 0 35px;
     display: block;
     width: 208px;
@@ -472,16 +466,16 @@
     @extend %dmsans-700;
     margin-bottom: 7px;
   }
-  &__item-text{
+  &__item-text {
     color: #a3bbc8;
     padding-left: 35px;
     @extend %dmsans-700;
   }
 }
 
-.video{
+.video {
   margin: 120px 0;
-  &__popup{
+  &__popup {
     width: 100%;
     height: 500px;
     display: flex;
@@ -490,34 +484,34 @@
   }
 }
 
-.blog{
-  &__title{
+.blog {
+  &__title {
     padding-bottom: 265px;
   }
-  &__inner{
-  background-color: #f8f1ea;
+  &__inner {
+    background-color: #f8f1ea;
   }
-  &__top{
+  &__top {
     display: flex;
-    justify-content: space-between;;
+    justify-content: space-between;
   }
-  &__link{
+  &__link {
     @extend %dmsans-700;
     color: #262626;
   }
-  &__items{
+  &__items {
     display: flex;
     justify-content: space-between;
     padding-top: 30px;
   }
-  &__item{
+  &__item {
     margin-top: -279px;
     max-width: 370px;
     width: 100%;
     background-color: #fff;
     border-radius: 5px;
   }
-  &__btn{
+  &__btn {
     background-color: #a3bbc8;
     padding: 5px 30px;
     color: #fff;
@@ -530,8 +524,8 @@
     width: 100px;
     position: absolute;
     @extend %popins-700;
-    }
-  &__item-titlelink{
+  }
+  &__item-titlelink {
     display: block;
     padding: 30px 50px 0 30px;
     @extend %dmsans-500;
@@ -539,26 +533,25 @@
     color: #262626;
     height: 130px;
   }
-  &__item-info{
+  &__item-info {
     display: flex;
     justify-content: flex-start;
     padding: 10px 0;
     border-top: 1px solid #e0e0e0;
     margin: 0 28px;
   }
-  &__item-date{
+  &__item-date {
     padding: 0 45px 0 17px;
   }
   &__item-author,
-  &__item-date{
+  &__item-date {
     font-size: 12px;
     color: #222933;
-    @extend %rubik-400; 
+    @extend %rubik-400;
   }
 }
 
 .partners {
-  
   &__list {
     height: 270px;
     display: flex;
@@ -567,25 +560,25 @@
   }
 }
 
-.top{
+.top {
   background-color: #edf1f4;
   padding: 30px 0 25px;
-  &__title{
+  &__title {
     margin-bottom: 8px;
     color: #222933;
     @extend %rubik-400;
   }
- }
- 
-.modal{
+}
+
+.modal {
   padding-top: 115px;
   max-width: 470px;
   margin: 0 auto 122px;
-  &__label{
+  &__label {
     margin-bottom: 30px;
     display: block;
   }
-  &__input{
+  &__input {
     display: block;
     width: 100%;
     border: 2px solid #f6f6f6;
@@ -593,7 +586,7 @@
     height: 60px;
     padding: 0 15px;
   }
-  &__btn{
+  &__btn {
     display: block;
     background-color: #a3bbc8;
     color: #fff;
@@ -603,23 +596,23 @@
     width: 100%;
     cursor: pointer;
   }
-  &__problem{
+  &__problem {
     display: flex;
     justify-content: space-between;
     padding: 30px 0;
     border-bottom: 2px solid #f6f6f6;
     @extend %rubik-400;
   }
-  &__error{
+  &__error {
     color: inherit;
     display: inline-block;
   }
-  &__text{
+  &__text {
     text-align: center;
     padding: 30px 0 20px;
     @extend %rubik-400;
   }
-  &__greate{
+  &__greate {
     display: block;
     background-color: #fff;
     color: $subtitle;
@@ -631,32 +624,243 @@
   }
 }
 
-.terms{
+.terms {
   padding: 115px 0 30px;
   color: $subtitle;
   @extend %rubik-400;
-  &__item{
-  margin-bottom: 70px;
+  &__item {
+    margin-bottom: 70px;
   }
-  &__title{
+  &__title {
     font-size: 24px;
     @extend %rubik-500;
     color: $subtitle;
     margin-bottom: 30px;
   }
-  &__list{
+  &__list {
     margin-left: 30px;
     list-style-type: decimal-leading-zero;
   }
-  &__list-text{
+  &__list-text {
     margin-bottom: 25px;
-    &:last-child{
-       margin-bottom: 0;
-     }
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
-
 }
 
+.about {
+  padding-top: 120px;
+  &__top-inner {
+    color: $subtitle;
+    display: flex;
+    padding-bottom: 120px;
+  }
+  &__top-img {
+    margin-right: 46px;
+  }
+  &__top-info {
+    display: flex;
+    padding: 80px 0 50px;
+  }
+  &__top-years {
+    font-size: 140px;
+    color: #a3bbc8;
+    @extend %rubik-500;
+    font-weight: bold;
+    display: block;
+    line-height: 100px;
+    padding-right: 30px;
+  }
+  &__top-exp {
+    max-width: 100px;
+    display: block;
+    padding-top: 19px;
+  }
+  &__top-box {
+    margin-bottom: 60px;
+    position: relative;
+  }
+  &__top-title {
+    font-size: 36px;
+    @extend %dmsans-700;
+    margin-bottom: 45px;
+  }
+  &__top-text {
+    max-width: 555px;
+    display: block;
+  }
+  &__top-text::after {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 2px;
+    background-color: #e6eaf0;
+    top: 242px;
+    left: 0px;
+  }
+  &__top-items {
+    display: flex;
+    justify-content: space-between;
+    max-width: 530px;
+    position: relative;
+  }
+  &__top-item {
+    display: flex;
+    padding-top: 32px;
+  }
+  &__top-itemb::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 80px;
+    background-color: #e6eaf0;
+    top: 19px;
+    left: 173px;
+  }
+  &__top-itemb::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 80px;
+    background-color: #e6eaf0;
+    top: 19px;
+    left: 368px;
+  }
 
+  &__top-itemimg {
+    padding-top: 7px;
+  }
+  &__top-block {
+    padding-left: 20px;
+  }
+  &__top-number {
+    font-size: 36px;
+    @extend %dmsans-700;
+  }
+  &__top-words {
+    font-size: 16px;
+    @extend %dmsans-700;
+    color: #4c4c4c;
+  }
+  &__works {
+    background-color: #fcd7b6;
+    padding: 80px 0;
+  }
+  &__works-items {
+    display: flex;
+    justify-content: space-around;
+    color: $subtitle;
+    @extend %dmsans-700;
+  }
+  &__works-item {
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+  }
+  &__works-number {
+    font-size: 36px;
+    padding: 20px 0;
+    display: block;
+  }
+  &__top-words {
+    font-size: 18px;
+  }
+}
+
+.team {
+  padding: 120px 0;
+  &__inner {
+    display: flex;
+  }
+  &__info {
+    max-width: 303px;
+    color: $subtitle;
+    margin-right: 100px;
+  }
+  &__title {
+    font-size: 36px;
+    @extend %dmsans-700;
+    padding-bottom: 30px;
+  }
+  &__text {
+    @extend %rubik-400;
+    padding-bottom: 35px;
+  }
+  &__btn {
+    border: none;
+    background-color: #a3bbc8;
+    width: 170px;
+    padding: 22px 0 20px 27px;
+    cursor: pointer;
+    @extend %rubik-500;
+    font-size: 15px;
+    line-height: 12px;
+    position: relative;
+  }
+  &__link {
+    color: #fff;
+  }
+  &__arrows {
+    position: absolute;
+    top: 22px;
+    left: 136px;
+  }
+  &__pages {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px 30px;
+  }
+  
+  &__img {
+    max-width: 370px;
+    position: relative;
+    z-index: -1;
+  }
+  &__box {
+    margin-top: -50px;
+    max-width: 325px;
+    box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+    padding: 20px 23px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+  }
+  &__box-name {
+    font-size: 22px;
+    color: #436372;
+    @extend %dmsans-700;
+    padding-bottom: 5px;
+  }
+  &__box-position {
+    @extend %rubik-400;
+    color: #565872;
+  }
+  &__box-links {
+    display: flex;
+    padding-top: 10px;
+    
+  }
+  &__box-inst{
+    width: 41px;
+    height: 41px;
+    padding: 12px;
+    border-radius: 50%;
+    background-color: #f6f6f6;
+    margin-right: 7px;
+  }
+
+  &__box-google {
+    width: 41px;
+    height: 41px;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: #f6f6f6;
+       
+  }
+}
 
 @import "media";
